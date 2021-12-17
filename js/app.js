@@ -11,6 +11,6 @@ var carousel = new bootstrap.Carousel(myCarousel, {
   wrap: true,
   pause: 'hover',
   touch: true
-})
+});
 
 
