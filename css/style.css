@@ -5,7 +5,10 @@
   padding: 0;
 }
 
-h1 {
-  color: red;
+.carousel-item {
+  height: 32rem;
+  background: #777;
+  color: white;
+  padding-top: 25%;
 }
 /*# sourceMappingURL=style.css.map */
