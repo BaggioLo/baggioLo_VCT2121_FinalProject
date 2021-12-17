@@ -13,12 +13,41 @@ var carousel = new bootstrap.Carousel(myCarousel, {
   touch: true
 });
 
-/* GSAP animation */
+/* GSAP animation added the GSAP animation to the menu and headers,
+as well as the picture gallery with wrapper class */
 
 gsap.from('nav', {duration: 1, y:'-100%', ease:'bounce'});
 gsap.from('h5', {duration: 2, y:'-100%', ease:'bounce'});
 gsap.from('h1', {duration: 2, y:'-100%', ease:'bounce'});
 gsap.from('.wrapper', {duration: .5, opacity: 0, stagger: .5});
+
+/* Jquery Hover */
+
+/* Jquery function allows me to hover over the card on the home page,
+started this by grabbing the card class from bootstrap and adding a hover
+and animate, the first part of the function moves the card when
+the mouse hovers over, the second part of the function moves the card
+when the mouse moves out */
+
+$(document).ready(function(){
+
+  $('.card').hover(
+    function(){
+      $(this).animate({
+        marginTop: "-=1%",
+      }, 400);
+    },
+
+    function(){
+      $(this).animate({
+        marginTop: "0%"
+      },400);
+    }
+  );
+});
+
+
+
 
 
 
