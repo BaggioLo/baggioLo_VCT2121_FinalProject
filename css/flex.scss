@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CSS Variables */
+$primary-color: #0a4275;
+
+h1{
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+    h1{
+        text-align: center;
+        text-transform: uppercase;
+        margin: 5% 0 5% 0;
+    }
+    .img-area{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .photo-size{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+        margin-bottom: 2.5%;
+    }
+    .photo-size:hover{
+        transition: 1s;
+        transform: scale(1.1);
+        filter: blur(5px);
+    }
+    .img1 {
+       background-image: url('../img/photo4.jpg');
+    }
+    .img2 {
+        background-image: url('../img/photo5.jpg');
+     }
+    .img3 {
+        background-image: url('../img/photo6.jpg');
+     }
+    .img4 {
+        background-image: url('../img/photo7.jpg');
+     }
+    .img5 {
+        background-image: url('../img/photo8.jpg');
+     }
+    .img6 {
+        background-image: url('../img/photo9.jpg');
+     }
+}
+
+.sidebar{
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction:row;
+    width: 72.5%;
+    padding: 5%;
+    margin: auto;
+    margin-bottom: 5%;
+    .size{
+        font-size: 2.5em;
+        color: white;
+    }
+    .size:hover{
+        transition: 0.5s;
+        color: gray;
+        filter: drop-shadow(8px 8px 10px gray);
+    }
+}
+
+.info-tab{
+    color: white;
+    h1{
+       text-align: center;
+       text-transform: uppercase;
+    }
+    width: 72.5%;
+    margin: auto;
+    overflow: hidden;
+    background-color: $primary-color;
+    margin-bottom: 5%;
+    padding: 5%;
+
+}
+
+/* Getting into media queries now!!! */
+
+/* This is for tablets */
+
+@media only screen and (min-width: 900px) {
+    .wrapper{
+       .img-area{
+           margin-left: 5%;
+           .photo-size{
+               margin-right: 5%;
+           }
+       }
+    }
+  }
+
+/* This is for desktops */
+
+@media only screen and (min-width: 1200px) {
+    .wrapper{
+       .img-area{
+           margin-left: 5%;
+           .photo-size{
+               margin-right: 5%;
+           }
+       }
+    }
+    .for-flex{
+        display: flex;
+    }
+    .info-tab{
+        height: 800px;
+        width: 800px;
+        margin-left: 25%;
+    }
+    .sidebar{
+        height: 800px;
+        width: 100px;
+        flex-direction: column;
+        margin-right: 25%;
+        .size{
+            padding-bottom: 50px;
+        }
+    }
+  }
+
+
+
