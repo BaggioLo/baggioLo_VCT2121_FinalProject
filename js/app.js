@@ -13,4 +13,13 @@ var carousel = new bootstrap.Carousel(myCarousel, {
   touch: true
 });
 
+/* GSAP animation */
+
+gsap.from('nav', {duration: 1, y:'-100%', ease:'bounce'});
+gsap.from('h5', {duration: 2, y:'-100%', ease:'bounce'});
+gsap.from('h1', {duration: 2, y:'-100%', ease:'bounce'});
+gsap.from('.wrapper', {duration: .5, opacity: 0, stagger: .5});
+
+
+
 
